@@ -1,0 +1,74 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    color: white;
+    /* background-color: #6200ea; */
+    background: linear-gradient(90deg, #3C3F92, #2C3EBB);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    overflow: hidden;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+  }
+  
+  /* Ripple circle */
+  .btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  /* Glow flash */
+  .btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  /* Hover state */
+  .btn:hover {
+    background-color: #3700b3;
+  }
+  
+  .btn:hover::after {
+    animation: ripple-grow 1s ease-out forwards;
+  }
+  
+  .btn:hover::before {
+    animation: flash-fade 0.4s ease-out forwards;
+  }
+  
+  /* Ripple animation (circle expands + fades) */
+  @keyframes ripple-grow {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0.6;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(15);
+      opacity: 0;
+    }
+  }
+  
+  /* Glow flash fade out */
+  @keyframes flash-fade {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }

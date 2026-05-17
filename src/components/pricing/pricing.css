@@ -1,0 +1,62 @@
+#pricing {
+    background: #000000;
+    color: #ffffff;
+    margin: 5rem calc(-1 * var(--container-horizontal-padding)) 0;
+    padding: 4rem var(--container-horizontal-padding) 5rem;
+    text-align: center;
+}
+
+#pricing .section-intro {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+#pricing .section-intro-title {
+    color: #9f9f9f;
+    font-size: 1rem;
+}
+
+#pricing .section-intro-heading {
+    color: #ffffff;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 5rem;
+}
+
+#pricing .section-intro-decription {
+    max-width: 860px;
+    margin: 0 auto;
+    color: #8d8d8d;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+#pricing-cta-wrapper {
+    margin-top: 2.5rem;
+}
+
+#pricing-cta-wrapper .btn {
+    border-radius: .35rem;
+    padding: 1rem 2.5rem;
+    text-transform: none;
+    font-size: 1rem;
+    background: #3540bd;
+}
+
+@media only screen and (max-width: 1000px) {
+    #pricing {
+        padding: 3.5rem 1rem 4rem;
+    }
+
+    #pricing .section-intro-heading {
+        font-size: 1.9rem;
+        line-height: 2.35rem;
+        margin-bottom: 3rem;
+    }
+
+    #pricing .section-intro-decription {
+        font-size: .95rem;
+        line-height: 1.75rem;
+    }
+}

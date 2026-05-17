@@ -1,0 +1,212 @@
+/* === OUTER NAVBAR === */
+#main-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 0;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+/* === INNER WRAPPER === */
+.navbar-inner {
+  margin: 1rem auto;
+  padding: 0.8rem 1.5rem;
+  max-width: 1350px;
+  border-radius: 1rem;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 14px 34px rgba(55, 55, 90, 0.08);
+  transition: all 0.4s ease;
+}
+
+/* === SCROLLED INNER === */
+#main-navbar.scrolled .navbar-inner {
+  margin: 0;
+  border-radius: 0;
+  max-width: 100%;
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  background: #ffffff;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 24px rgba(55, 55, 90, 0.12);
+}
+
+/* === LOGO === */
+#main-navbar #logo {
+  width: 5rem;
+  border-radius: 50%;
+}
+
+#brand-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 12rem;
+  height: 4.1rem;
+  border-radius: .55rem;
+  background: transparent;
+  box-shadow: none;
+}
+
+#brand-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+/* === NAV LINKS === */
+#main-navbar-links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 1rem;
+}
+
+#main-navbar-links li a {
+  position: relative;
+  margin: 0.5rem 1rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  color: #3f3b94;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#main-navbar-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #2C3EBB;
+  transition: width 0.3s ease;
+}
+
+#main-navbar-links li a:hover::after {
+  width: 100%;
+}
+
+#main-navbar-links li a:hover {
+  color: #2C3EBB;
+}
+
+/* === CTA BUTTON === */
+#main-navbar #contact-btn {
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #4B47A3, #2C3EBB);
+  color: white;
+  padding: 0.75rem 1.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(44, 62, 187, 0.3);
+  text-decoration: none;
+}
+
+#main-navbar #contact-btn:hover {
+  background: #3C3F92;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(44, 62, 187, 0.4);
+}
+
+/* === HAMBURGER === */
+#hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: #4B47A3;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-active div:nth-child(1) {
+  transform: rotate(45deg);
+  transform-origin: left center;
+}
+
+.hamburger-active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-active div:nth-child(3) {
+  transform: rotate(-45deg);
+  transform-origin: left center;
+}
+
+/* === MOBILE STYLES === */
+@media only screen and (max-width: 1000px) {
+  .navbar-inner {
+    padding: 1rem;
+    margin: 0.5rem auto;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  #main-navbar-links {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -10px);
+    width: 85%;
+    background-color: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 0 0 1rem 1rem;
+    padding: 1rem 0;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+      transform 0.3s ease-in-out,
+      opacity 0.3s ease-in-out,
+      visibility 0.3s ease-in-out;
+    z-index: 998;
+    display: flex;
+  }
+
+  #main-navbar-links li {
+    margin: 0.75rem 0;
+  }
+
+  #main-navbar-links.active {
+    transform: translate(-50%, 0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  #main-navbar #contact-btn {
+    display: none;
+  }
+
+  #brand-logo {
+    width: 9.5rem;
+    height: 3.35rem;
+  }
+
+  #brand-logo img {
+    width: 100%;
+    height: 100%;
+  }
+}

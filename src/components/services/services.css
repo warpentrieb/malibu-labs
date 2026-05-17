@@ -1,0 +1,137 @@
+#landing-services-wrapper {
+    background-color: #FFFFFF;
+    padding-bottom: 1rem;
+}
+
+#landing-services {
+    text-align: center;
+    letter-spacing: .05rem;
+    padding-top: 5rem;
+}
+
+#landing-services p:first-child {
+    margin-bottom: .5rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #8e8c8c;
+}
+
+#landing-services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    line-height: 3rem;
+}
+
+#landing-services-subheading {
+    max-width: 720px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7rem;
+    color: #4f4f60;
+}
+
+#landing-services-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-top: 3rem;
+    gap: 1.5rem;
+}
+
+#services-trust-panel {
+    max-width: 1050px;
+    margin: 2.5rem auto 0;
+    padding: 1.5rem;
+    border-radius: .9rem;
+    background: linear-gradient(135deg, #f7f7ff, #ffffff);
+    border: 1px solid rgba(60, 63, 146, 0.12);
+    box-shadow: 0 14px 34px rgba(44, 62, 187, 0.08);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+#services-trust-icon {
+    width: 4rem;
+    height: 4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .85rem;
+    background: #3C3F92;
+    color: #ffffff;
+    font-size: 1.6rem;
+}
+
+#services-trust-label {
+    margin: 0 0 .35rem;
+    color: #3C3F92;
+    font-size: .82rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+#services-trust-panel h3 {
+    margin: 0;
+    color: #20202c;
+    font-size: 1.35rem;
+    line-height: 1.35;
+}
+
+#services-trust-panel p:last-child {
+    margin: .55rem 0 0;
+    color: #555568;
+    line-height: 1.65;
+}
+
+#landing-services-btn-wrapper {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+#landing-services-btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #3C3F92, #2C3EBB);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    transition: all 0.3s;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    #landing-services-cards-wrapper {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #landing-services p:first-child {
+        font-size: 1rem;
+    }
+
+    #landing-services h2 {
+        font-size: 2rem;
+        line-height: normal;
+    }
+
+    #landing-services-subheading {
+        max-width: 85%;
+        font-size: .85rem;
+    }
+
+    #landing-services-cards-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #services-trust-panel {
+        grid-template-columns: 1fr;
+        margin: 2rem 1rem 0;
+        text-align: left;
+    }
+}

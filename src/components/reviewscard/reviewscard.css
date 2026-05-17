@@ -1,0 +1,105 @@
+.reviews-card {
+    position: relative;
+    padding: 1.7rem;
+    border-radius: .9rem;
+    background: #ffffff;
+    border: 1px solid rgba(60, 63, 146, 0.12);
+    box-shadow: 0 12px 30px rgba(40, 42, 94, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    overflow: hidden;
+}
+
+.reviews-card::before {
+    content: "\201C";
+    position: absolute;
+    right: 1.2rem;
+    top: .25rem;
+    color: rgba(60, 63, 146, 0.08);
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.reviews-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(44, 62, 187, 0.28);
+    box-shadow: 0 20px 44px rgba(44, 62, 187, 0.13);
+}
+
+.reviews-card-stars {
+    display: flex;
+    gap: .25rem;
+    color: #f3b647;
+    margin-bottom: 1rem;
+}
+
+.reviews-card-stars i {
+    font-size: .95rem;
+}
+
+.reviews-card-project {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.65rem;
+    padding: .25rem .65rem;
+    border-radius: 999px;
+    background: #eef0ff;
+    color: #3C3F92;
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.reviews-card-description {
+    position: relative;
+    z-index: 1;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444456;
+    margin: 0 0 1.8rem;
+    line-height: 1.7;
+}
+
+.reviews-card-client {
+    display: flex;
+    align-items: center;
+    gap: .85rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(60, 63, 146, 0.1);
+}
+
+.reviews-card-avatar {
+    width: 2.9rem;
+    height: 2.9rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: linear-gradient(135deg, #6C63FF, #2C3EBB);
+    font-weight: 900;
+}
+
+.reviews-card-name {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 0.04em;
+}
+
+.reviews-card-location {
+    font-size: .92rem;
+    color: #777;
+    font-weight: 500;
+    margin: .15rem 0 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .reviews-card {
+        padding: 1.4rem;
+    }
+}
