@@ -1,8 +1,8 @@
 import React from "react";
 import './benefits.css';
-import BenefitsCard from "../benefitsCard/benefitsCard";
-import SectionIntro from "../sectionIntro/SectionIntro";
-import Btn from "../btn/Btn";
+import BenefitsCard from "../benefitscard/benefitscard";
+import SectionIntro from "../sectionintro/sectionintro";
+import Btn from "../btn/btn";
 
 const Benefits = () => {
     return (

@@ -1,8 +1,8 @@
 import React from "react";
 import './reviews.css';
 
-import ReviewsCard from "../reviewsCard/reviewsCard";
-import SectionIntro from "../sectionIntro/SectionIntro";
+import ReviewsCard from "../reviewscard/reviewscard";
+import SectionIntro from "../sectionintro/sectionintro";
 
 const Reviews = () => {
     return (

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './hero.css';
-import Navbar from "../navbar/Navbar";
+import Navbar from "../navbar/navbar";
 
 const Hero = () => {
     const [scrolled, setScrolled] = useState(false);

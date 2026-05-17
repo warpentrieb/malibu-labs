@@ -1,5 +1,5 @@
 import React from "react";
-import './sectionIntro.css';
+import './sectionintro.css';
 
 const SectionIntro = (props) => {
     return (

@@ -1,7 +1,7 @@
 import React from "react";
 import './pricing.css';
-import SectionIntro from "../sectionIntro/SectionIntro";
-import Btn from "../btn/Btn";
+import SectionIntro from "../sectionintro/sectionintro";
+import Btn from "../btn/btn";
 
 const Pricing = () => {
     return (

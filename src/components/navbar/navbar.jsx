@@ -39,7 +39,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import './navbar.css';
-import Btn from "../btn/Btn";
+import Btn from "../btn/btn";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

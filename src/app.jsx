@@ -1,11 +1,11 @@
 import { useEffect } from "react";
-import Benefits from "./components/benefits/Benefits";
-import Container from "./components/container/Container";
-import Footer from "./components/footer/Footer";
-import Hero from "./components/hero/Hero";
-import Pricing from "./components/pricing/Pricing";
-import Reviews from "./components/reviews/Reviews";
-import Services from "./components/services/Services";
+import Benefits from "./components/benefits/benefits";
+import Container from "./components/container/container";
+import Footer from "./components/footer/footer";
+import Hero from "./components/hero/hero";
+import Pricing from "./components/pricing/pricing";
+import Reviews from "./components/reviews/reviews";
+import Services from "./components/services/services";
 import Contact from "./components/contact/Contact";
 
 const App = () => {
