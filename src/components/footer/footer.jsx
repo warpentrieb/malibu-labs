@@ -15,7 +15,7 @@ const Footer = () => {
       <div id="main-footer-wrapper">
         <div id="main-footer-branding" aria-label="Company branding">
           <a href="#landing-hero" id="main-footer-logo" aria-label="Malibu Labs home">
-            <img src="/assets/malibu-labs-logo-footer-transparent.png" alt="Malibu Labs" />
+            <img src="assets/malibu-labs-logo-footer-transparent.png" alt="Malibu Labs" />
           </a>
           <p id="main-footer-description">
             Websites, SEO, ads, mobile apps, custom web apps, and AI agents built around your goals, requirements, and project complexity.
