@@ -74,7 +74,7 @@ const Navbar = () => {
     <nav id="main-navbar" className={scrolled ? "scrolled" : ""} ref={navbarRef}>
       <div className="navbar-inner">
         <a href="#landing-hero" id="brand-logo" aria-label="Malibu Labs home">
-          <img src="assets/malibu-labs-logo-transparent.png" alt="Malibu Labs" />
+          <img src="/assets/malibu-labs-logo-transparent.png" alt="Malibu Labs" />
         </a>
         <ul id="main-navbar-links" className={menuOpen ? "active" : ""}>
           <li><ScrollLink to="landing-hero" smooth duration={500} offset={-80} onClick={() => setMenuOpen(false)}>Home</ScrollLink></li>
