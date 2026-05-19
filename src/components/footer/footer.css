@@ -228,6 +228,15 @@
     grid-template-columns: 1fr;
   }
 
+  #main-footer-logo {
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+
+  #main-footer-logo img {
+    object-position: left center;
+  }
+
   #main-footer-bottom {
     flex-direction: column;
     align-items: flex-start;
